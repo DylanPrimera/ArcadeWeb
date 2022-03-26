@@ -7,8 +7,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
-  public formGroup: FormGroup;
   @Output() emitForm = new EventEmitter<any>();
+  public formGroup: FormGroup;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {

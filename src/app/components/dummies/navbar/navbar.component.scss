@@ -1,5 +1,5 @@
 $color: #baff00;
-
+$black: #121212;
 .header {
   position: absolute;
   width: 100%;
@@ -16,7 +16,7 @@ $color: #baff00;
 
     .nav-logo {
       display: inline-block;
-      background: #121212;
+      background: $black;
       padding: 20px 60px 30px;
     }
 
@@ -74,24 +74,31 @@ $color: #baff00;
 
 }
 
-@media screen and (max-device-width: 1000px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .custom-nav {
-      display: flex;
-      justify-content: space-between;
-      background-color: #121212;
 
-      .nav-logo {
-        padding: 20px 17px 18px !important;
-      }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    margin-left: unset !important;
+  }
+}
 
-      .menu {
-        margin-left: 30px !important;
-        .nav-link {
-          color: white !important;
-        }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-logo {
+    padding: 20px 40px 30px;
+  }
+
+  .custom-nav {
+    .navbar-toggler {
+      margin-left: 61%;
+      font-size: 33px;
+    }
+    .menu {
+      background-color: $black;
+      padding: 15px;
+      a {
+        margin-right: 5px;
+        font-size: 13px;
+        padding: 37px 7px 5px;
       }
     }
-
-
+  }
 }

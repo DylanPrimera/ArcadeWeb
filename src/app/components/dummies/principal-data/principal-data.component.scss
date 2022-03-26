@@ -2,6 +2,7 @@ $bacground-bar: #121212;
 $links-color:#838383;
 $color: #baff00;
 $white-color: #fff;
+
 .data-content {
   height: 970px;
   background-image: url("../../../../assets/img/principal-bg.jpg"); //Foto de diseño de interiores creado por rawpixel.com - www.freepik.es
@@ -52,7 +53,7 @@ $white-color: #fff;
 
         .item-content {
           max-width: 690px;
-          margin-left: 426px;
+          margin-left: 249px;
           margin-bottom: 50px;
           padding-top: 170px;
           padding-bottom: 70px;
@@ -68,14 +69,15 @@ $white-color: #fff;
           border-top: 150px solid $color;
           border-left: 150px solid $color;
           border-bottom: 90px solid $color;
-          top: -2px;
-          left: -175px;
+          top: 2%;
+          left: -37%;
           opacity: 0.73;
         }
 
         .item-content h2 {
           color: $white-color;
           font-size: 80px;
+          font-weight: bold;
           line-height: 80px;
         }
 
@@ -119,8 +121,8 @@ $white-color: #fff;
     .navigation {
       position: absolute;
       display: inline-block;
-      left: 350px;
-      bottom: -234px;
+      bottom: 10%;
+      left: 17%;
 
       .prev, .next {
         display: inline-block;
@@ -140,10 +142,10 @@ $white-color: #fff;
 
     .vertical-text span{
       position: absolute;
-      right: 140px;
+      right: -240%;
       transform: rotate(-90deg);
       transform-origin: right center;
-      bottom: 43%;
+      bottom: 61%;
       z-index: 30;
       color: $white-color !important;
       text-transform: uppercase;
@@ -154,9 +156,9 @@ $white-color: #fff;
       width: 153px;
       height: 250px;
       position: absolute;
-      right: 60px;
+      right: -257%;
+      bottom: -5%;
       background: rgba(18, 18, 18, 0.95);
-      bottom: -341px;
       z-index: 111;
       text-align: right;
       padding-right: 20px;
@@ -175,155 +177,75 @@ $white-color: #fff;
   }
 }
 
+// Laptops
 
-
-@media screen and (min-device-width: 1380px) {
-  .vertical-text span {
-    bottom: 67% !important;
-  }
-
-  .counter {
-    bottom: 136px !important;
-  }
-
-  .navigation {
-    bottom: 243px !important;
-  }
-}
-
-
-// @media screen and (min-device-width: 1367px) and (max-device-width: 1379px) {
-//   .vertical-text span {
-//     bottom: 67% !important;
-//   }
-
-//   .counter {
-//     bottom: 136px !important;
-//   }
-
-//   .navigation {
-//     bottom: 243px !important;
-//   }
-// }
-
-// @media screen and (min-device-width: 1200px) and (max-device-width: 1360px) {
-//   .vertical-text span {
-//     bottom: 67% !important;
-//   }
-
-//   .counter {
-//     bottom: 136px !important;
-//   }
-
-//   .navigation {
-//     bottom: 243px !important;
-//   }
-// }
-
-@media screen and (min-device-width: 1000px) and  (max-device-width: 1200px){
-  .item-content {
-    margin-bottom: unset !important;
-    margin-left: 260px !important;
-  }
-
-
-  .vertical-text span {
-    right: 50px !important;
-    bottom: 70% !important;
-  }
-
-  .counter {
-    width: 139px !important;
-    right: 4px !important;
-    bottom: 150px !important;
-  }
-
-  .navigation {
-    left: 185px !important;
-    bottom: 273px !important;
-  }
-}
-
-// Medium screen
-@media screen and (min-device-width: 992px) and (max-device-width: 999px) {
-  .item-content {
-    margin-left: 230px !important;
-  }
-
-  .item-content h2 {
-    font-size: 60px !important;
-  }
-
-  .vertical-text span {
-    right: 50px !important;
-    bottom: 67% !important;
-  }
-
-  .counter {
-     right: 11px !important;
-     bottom: 135px !important;
-  }
-
-  .navigation {
-    left: 153px !important;
-    bottom: 249px !important;
-  }
-
-}
-
-// Tablet
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .data-content {
-      height: 850px !important;
-    }
-
-    .text-section-btn {
-      min-width: 160px !important;
-	    font-size: 14px !important;
-    }
-
-    .item-content {
-      margin-left: 226px !important;
-      margin-bottom: 140px !important;
-      padding-top: 120px !important;
-      padding-bottom: 30px !important;
-    }
-
-    .item-content h2 {
-      font-size: 50px !important;
-      line-height: 50px !important;
-    }
-
-    .item-content:after {
-      border-top: 100px solid $color !important;
-		  border-left: 100px solid $color !important;
-		  border-bottom: 60px solid $color !important;
-      left: -150px !important;
-	    width: 271px !important;
-    }
-
-    .navigation {
-      left: 171px !important;
-      bottom: -141px !important;
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .counter {
+      right: -114% !important;
     }
 
     .vertical-text span{
-      right: 45px !important;
-	    bottom: 33% !important;
-      font-size: 12px !important;
+      right: -96% !important;
     }
 
-    .counter {
-      width: 85px !important;
-      height: 140px !important;
-	    bottom: -297px !important;
-      right: 2px !important;
-    }
+}
 
-    .counter span {
-      font-size: 28px !important;
-      top: -35px !important;
-      right: -3px !important;
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .item-content {
+    margin-left: 273px !important;
+  }
+  
+  .counter {
+    right: 3% !important;
+    bottom: -43% !important;
+  }
+
+  .vertical-text span{
+    bottom: 43% !important;
+  }
+
+  .navigation {
+    bottom: -25% !important;
+    left: 17% !important;
+  }
+}
+
+// tablet
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .social-bar {
+    position: absolute;
+    width: 100px;
+    height: 134.6%;
+  }
+  
+  .item-content {
+    margin-left: unset !important;
+    padding-top: 108px !important;
+    padding-bottom: 21px !important;
+    h2 {
+      font-size: 55px !important;
     }
+  }
+
+  .item-content:after {
+    border-top: 100px solid $color !important;
+    border-left: 100px solid $color !important;  
+    border-bottom: 60px solid $color !important;
+  }
+
+  .navigation {
+    left: -38% !important;
+  }
+  
+  .counter {
+    right: -103% !important;
+  }
+
+  .vertical-text span {
+    right: -75% !important;
+    bottom: 60% !important;
+  }
+
 }
 

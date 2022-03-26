@@ -1,0 +1,329 @@
+$bacground-bar: #121212;
+$links-color:#838383;
+$color: #baff00;
+$white-color: #fff;
+.data-content {
+  height: 970px;
+  background-image: url("../../../../assets/img/principal-bg.jpg"); //Foto de diseño de interiores creado por rawpixel.com - www.freepik.es
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  .social-bar {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    background: $bacground-bar;
+    z-index: 20;
+
+    .social-bar-content {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      margin-bottom: 90px;
+
+      .social-bar-links a {
+        display: block;
+        color: $links-color;
+        margin-bottom: 20px;
+        font-size: 20px;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+      }
+
+      .social-bar-links a:hover {
+        color: $color;
+      }
+    }
+  }
+
+  .text-section {
+    .text-section-content {
+      width: 100%;
+      height: 960px;
+      display: table;
+
+      .text-section-item {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+
+        .item-content {
+          max-width: 690px;
+          margin-left: 426px;
+          margin-bottom: 50px;
+          padding-top: 170px;
+          padding-bottom: 70px;
+          position: relative;
+          transition: all 0.6s;
+        }
+
+        .item-content:after {
+          position: absolute;
+          content: "";
+          height: calc(100% + 50px);
+          width: 330px;
+          border-top: 150px solid $color;
+          border-left: 150px solid $color;
+          border-bottom: 90px solid $color;
+          top: -2px;
+          left: -175px;
+          opacity: 0.73;
+        }
+
+        .item-content h2 {
+          color: $white-color;
+          font-size: 80px;
+          line-height: 80px;
+        }
+
+        .text-section-btn {
+          display: inline-block;
+          font-weight: 700;
+          color: $white-color;
+          text-decoration: none;
+          border: 4px solid $white-color;
+          min-width: 200px;
+          text-align: center;
+          padding: 19px 0;
+          position: relative;
+          background-color: transparent;
+          margin-right: 15px;
+          z-index: 1;
+          transition: 0.3s ease-out;
+        }
+
+        .text-section-btn:after, .text-section-btn:before {
+          position: absolute;
+          content: "";
+          width: 26px;
+          height: 4px;
+          right: -15px;
+          background: $white-color;
+          color: $white-color;
+        }
+
+        .text-section-btn:after {
+          bottom: 8px;
+        }
+
+        .text-section-btn:before {
+          bottom: 18px;
+        }
+      }
+
+    }
+
+    .navigation {
+      position: absolute;
+      display: inline-block;
+      left: 350px;
+      bottom: -234px;
+
+      .prev, .next {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: $white-color;
+        letter-spacing: 1px;
+        transition: all 0.4s;
+      }
+
+      .prev:hover, .next:hover {
+        color: $color;
+      }
+    }
+
+    .vertical-text span{
+      position: absolute;
+      right: 140px;
+      transform: rotate(-90deg);
+      transform-origin: right center;
+      bottom: 43%;
+      z-index: 30;
+      color: $white-color !important;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+    }
+
+    .counter {
+      width: 153px;
+      height: 250px;
+      position: absolute;
+      right: 60px;
+      background: rgba(18, 18, 18, 0.95);
+      bottom: -341px;
+      z-index: 111;
+      text-align: right;
+      padding-right: 20px;
+      padding-top: 60px;
+      color: $white-color;
+      font-weight: 700;
+
+      & span {
+        font-size: 48px;
+        color: $color;
+        position: relative;
+        top: -10px;
+        right: 6px;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-device-width: 1380px) {
+  .vertical-text span {
+    bottom: 67% !important;
+  }
+
+  .counter {
+    bottom: 136px !important;
+  }
+
+  .navigation {
+    bottom: 243px !important;
+  }
+}
+
+
+// @media screen and (min-device-width: 1367px) and (max-device-width: 1379px) {
+//   .vertical-text span {
+//     bottom: 67% !important;
+//   }
+
+//   .counter {
+//     bottom: 136px !important;
+//   }
+
+//   .navigation {
+//     bottom: 243px !important;
+//   }
+// }
+
+// @media screen and (min-device-width: 1200px) and (max-device-width: 1360px) {
+//   .vertical-text span {
+//     bottom: 67% !important;
+//   }
+
+//   .counter {
+//     bottom: 136px !important;
+//   }
+
+//   .navigation {
+//     bottom: 243px !important;
+//   }
+// }
+
+@media screen and (min-device-width: 1000px) and  (max-device-width: 1200px){
+  .item-content {
+    margin-bottom: unset !important;
+    margin-left: 260px !important;
+  }
+
+
+  .vertical-text span {
+    right: 50px !important;
+    bottom: 70% !important;
+  }
+
+  .counter {
+    width: 139px !important;
+    right: 4px !important;
+    bottom: 150px !important;
+  }
+
+  .navigation {
+    left: 185px !important;
+    bottom: 273px !important;
+  }
+}
+
+// Medium screen
+@media screen and (min-device-width: 992px) and (max-device-width: 999px) {
+  .item-content {
+    margin-left: 230px !important;
+  }
+
+  .item-content h2 {
+    font-size: 60px !important;
+  }
+
+  .vertical-text span {
+    right: 50px !important;
+    bottom: 67% !important;
+  }
+
+  .counter {
+     right: 11px !important;
+     bottom: 135px !important;
+  }
+
+  .navigation {
+    left: 153px !important;
+    bottom: 249px !important;
+  }
+
+}
+
+// Tablet
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .data-content {
+      height: 850px !important;
+    }
+
+    .text-section-btn {
+      min-width: 160px !important;
+	    font-size: 14px !important;
+    }
+
+    .item-content {
+      margin-left: 226px !important;
+      margin-bottom: 140px !important;
+      padding-top: 120px !important;
+      padding-bottom: 30px !important;
+    }
+
+    .item-content h2 {
+      font-size: 50px !important;
+      line-height: 50px !important;
+    }
+
+    .item-content:after {
+      border-top: 100px solid $color !important;
+		  border-left: 100px solid $color !important;
+		  border-bottom: 60px solid $color !important;
+      left: -150px !important;
+	    width: 271px !important;
+    }
+
+    .navigation {
+      left: 171px !important;
+      bottom: -141px !important;
+    }
+
+    .vertical-text span{
+      right: 45px !important;
+	    bottom: 33% !important;
+      font-size: 12px !important;
+    }
+
+    .counter {
+      width: 85px !important;
+      height: 140px !important;
+	    bottom: -297px !important;
+      right: 2px !important;
+    }
+
+    .counter span {
+      font-size: 28px !important;
+      top: -35px !important;
+      right: -3px !important;
+    }
+}
+

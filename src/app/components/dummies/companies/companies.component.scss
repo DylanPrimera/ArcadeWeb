@@ -1,0 +1,39 @@
+$green-color: #baff00;
+.companies-container {
+  padding: 100px 0;
+  .title {
+    margin-bottom: 75px;
+    & h1 {
+      display: inline-block;
+      background: $green-color;
+      padding: 0 20px;
+      margin-bottom: 0;
+      font-size: 60px;
+      font-weight: bold;
+    }
+  }
+  .companies-content {
+    display: flex;
+    .single-brand {
+      display: table;
+      height: 80px;
+      width: 100%;
+
+      & a {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        & img {
+          width: auto;
+          margin: 0 auto;
+          opacity: 0.2;
+          transition: all 0.4s;
+        }
+      }
+
+      & a:hover img {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@ $background-color: #eeeeee;
       font-weight: bold;
     }
   }
-  .projects-filter-nav {
+  .filter {
     list-style: none;
     text-align: right;
     margin-top: 20px;
@@ -143,5 +143,48 @@ $background-color: #eeeeee;
     & .prev:hover, .next:hover {
       background: $green-color;
     }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .filter {
+    text-align: left !important;
+    li {
+      margin-left: 0 !important;
+		  margin-right: 15px !important;
+    }
+  }
+
+  .filter-section {
+    margin-left: -27px;
+  }
+
+  .last-project {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .last-project {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 586px) {
+  .last-project {
+    display: none;
+  }
+  .aux {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .last-project {
+    display: none;
+  }
+
+  .aux {
+    display: none;
   }
 }

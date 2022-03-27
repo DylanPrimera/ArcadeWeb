@@ -58,3 +58,95 @@ $gray-color:  #737373;
   }
   
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    .footer-social-bar {
+      width: auto !important;
+      top: -25px !important;
+      right: 50% !important;
+      padding: 10px !important;
+      margin-right: -133px !important;
+      & a {
+        display: inline-block !important;
+        padding: 0 15px !important;
+        margin-bottom: 0 !important;
+      }
+    }
+   
+    .copyright  {
+      position: relative !important;
+      width: 100% !important;
+      max-width: 720px !important;
+      margin: 40px auto 0 !important; 
+      left: 0 !important;
+      top: 0 !important;
+      margin-bottom: -50px !important; 
+      padding-left: 15px !important;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    .footer-social-bar {
+      width: auto !important;
+      top: -25px !important;
+      right: 50% !important;
+      padding: 10px !important;
+      margin-right: -133px !important;
+      & a {
+        display: inline-block !important;
+        padding: 0 15px !important;
+        margin-bottom: 0 !important;
+      }
+    }
+   
+    .copyright  {
+      position: relative !important;
+      width: 100% !important;
+      max-width: 720px !important;
+      margin: 40px auto 0 !important; 
+      left: 0 !important;
+      top: 0 !important;
+      margin-bottom: -50px !important; 
+      padding-left: 15px !important;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 586px) {
+  .footer {
+    .footer-social-bar {
+      width: auto !important;
+      top: -25px !important;
+      right: 50% !important;
+      padding: 10px !important;
+      margin-right: -133px !important;
+      & a {
+        display: inline-block !important;
+        padding: 0 15px !important;
+        margin-bottom: 0 !important;
+      }
+    }
+   
+    .copyright  {
+      position: relative !important;
+      width: 100% !important;
+      max-width: 720px !important;
+      margin: 40px auto 0 !important; 
+      left: 0 !important;
+      top: 0 !important;
+      margin-bottom: -50px !important; 
+      padding-left: 15px !important;
+      text-align: center;
+    }
+
+    .items {
+      margin-bottom: 40px !important;
+    }
+  }
+
+
+}

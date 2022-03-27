@@ -14,7 +14,7 @@ $green-color: #baff00;
   }
   .companies-content {
     display: flex;
-    .single-brand {
+    .company {
       display: table;
       height: 80px;
       width: 100%;
@@ -36,4 +36,28 @@ $green-color: #baff00;
       }
     }
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 586px) {
+  .companies-content {
+    .last-company {
+      display: none !important;
+    }
+    .aux {
+      display: none !important;
+    }
+  }
+ 
+}
+
+@media screen and (max-width: 479px) {
+  .companies-content {
+    .last-company {
+      display: none !important;
+    }
+    .aux {
+      display: none !important;
+    }
+  }
+ 
 }

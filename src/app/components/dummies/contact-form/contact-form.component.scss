@@ -75,3 +75,26 @@ $gray-color: #efefef;
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .img-form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-form {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 586px) {
+  .img-form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .img-form {
+    display: none;
+  }
+}

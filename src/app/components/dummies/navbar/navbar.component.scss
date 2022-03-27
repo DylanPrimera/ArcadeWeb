@@ -104,3 +104,37 @@ $black: #121212;
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .custom-nav {
+    .navbar-toggler {
+      margin-left: auto;
+      font-size: 33px;
+    }
+    .menu {
+      background-color: $black;
+      padding: 15px;
+      margin-left: 34px !important;
+      text-align: center;
+      a {
+        margin-right: 5px;
+        font-size: 13px;
+        padding: 37px 7px 5px;
+      }
+    }
+  }
+
+  .contact-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    background-color: $black;
+  }
+
+  .contact-number {
+    display: none;
+  }
+}

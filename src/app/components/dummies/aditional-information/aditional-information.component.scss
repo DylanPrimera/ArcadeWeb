@@ -81,3 +81,52 @@ $green-color: #baff00;
   }
 
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   .information-content {
+     background-color: #222222;
+     margin-bottom: 0 !important;
+     
+   } 
+
+  .architecture-img, .architecture-img:after {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .information-content {
+    background-color: #222222;
+    margin-bottom: 0 !important;
+    
+  } 
+
+ .architecture-img, .architecture-img:after {
+   display: none !important;
+ }
+}
+
+@media screen and (min-width: 480px) and (max-width: 586px) {
+  .information-content {
+    background-color: #222222;
+    margin-bottom: 0 !important;
+    
+  } 
+
+ .architecture-img, .architecture-img:after {
+   display: none !important;
+ }
+}
+
+@media screen and (max-width: 479px)  {
+  .information-content {
+    background-color: #222222;
+    margin-bottom: 0 !important;
+    
+  } 
+
+ .architecture-img, .architecture-img:after {
+   display: none !important;
+ }
+}
